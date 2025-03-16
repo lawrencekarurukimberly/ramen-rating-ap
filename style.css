@@ -1,0 +1,125 @@
+
+h1{text-align: center;
+    background-color: rgb(0, 0, 0);
+   padding: 10px;
+    margin: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #images {
+        display: flex;
+        background-color: rgb(223, 216, 216);
+        flex-direction:row;
+        gap: 20px;
+        overflow-x: scroll;
+        padding: 15px;
+        margin:0 ;
+        align-items:;
+    }
+    #images img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+    }
+    #images img:hover {
+        transform: scale(1.1);
+    }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#ramen-menu img:hover {
+    transform: scale(1.1);
+}
+
+#ramen-detail img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#ramen-form {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ramen-form label {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+#ramen-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#ramen-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#ramen-form button:hover {
+    background-color: #1d139e;
+}
+#selected-ramen {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 400px;
+    background-color: white;
+    font-weight: bold;
+
+}
+
+#selected-ramen img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#selected-ramen figcaption {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 16px;
+    color: #131111;
+}
+#edit-section {
+    margin-top: px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .display: inline-block;
+}
+
+#delete-ramen {
+    background-color: #d9534f;
+}
+
+#delete-ramen:hover {
+    background-color: #d61812;
+}

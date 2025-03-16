@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Test of heaven</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <header><h1>Ramen Rater</h1></header>
+
+    <div id="images">
+<img src="https://i.pinimg.com/236x/d5/d4/bb/d5d4bb7e8a83e3cc20f3383e4ca3e5c7.jpg" alt="Miso Ramen" data-id="2">
+<img src="https://i.pinimg.com/736x/02/13/b1/0213b1f7c6e2bd5b99d4b78e15c0fecf.jpg" alt="Tonkotsu Ramen" data-id="3">
+<img src="https://i.pinimg.com/474x/c0/05/f1/c005f12867549656070006bf650579a2.jpg" alt="mulo" data-id="4">
+<img src="https://i.pinimg.com/236x/10/9c/d2/109cd288493a97b4232a0ee7565660ba.jpg" alt="mayai" data-id="5">
+<img src="https://i.pinimg.com/236x/b1/cc/46/b1cc4674823b189c71b2083da1f75a6e.jpg" alt="meat" data-id="7">
+</div>
+
+<section id="selected-ramen">
+    <figure>
+        <img id="selected-image" src="" alt="SelectedRamen">
+        <figcaption>
+            <p id="selected-restaurant"></p>
+            <p id="selected-rating"></p>
+            <p id="selected-comment"></p>
+        </figcaption>
+    </figure>
+</section>
+
+
+    <form id="ramen-form">
+        <h3>Add New Ramen</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="name" required>
+
+        <label for="restramenaurant">Restaurant</label>
+        <input type="text" id="restaurant" name="restaurant" placeholder="restaurant name" required>
+
+        <label for="image">Image URL</label>
+        <input type="text" id="image" name="image" placeholder="image URL" required>
+
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="10" required>
+
+        <label for="comment">Comment:</label>
+        <input type="text" id="comment" name="comment">
+
+        <button type="submit">Create</button>
+        <form id="edit-section">
+            <h3>Edit Selected Ramen</h3>
+            <form id="edit-form">
+                <label for="edit-rating">New Rating:</label>
+                <input type="number" id="edit-rating" name="edit-rating" min="1" max="10" required>
+
+                <label for="edit-comment">New Comment:</label>
+                <input type="text" id="edit-comment" name="edit-comment" placeholder="Edit comment">
+
+                <button type="submit">Update</button>
+            </form>
+
+            <button id="delete">Delete Selected Ramen</button>
+        </form>
+    </form>
+
+
+
+     <script src="index.js"></script>
+ </body>
+ </html>
